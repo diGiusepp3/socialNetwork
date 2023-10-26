@@ -28,4 +28,4 @@ Op dit moment accepteren we geen externe bijdragen.
 
 ## Licentie
 
-Dit project is gelicentieerd onder de MIT. Zie het [LICENSE](LICENSE) bestand voor meer informatie.
+Dit project is gelicentieerd onder de MIT. Zie het [LICENSE-NL](LICENSE-NL) bestand voor meer informatie.
