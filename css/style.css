@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "SometypeMono-Italic";
+  src: url("/fonts/SometypeMono-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SometypeMono";
+  src: url("/fonts/SometypeMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "SometypeMono", monospace;
+}
+
+a {
+  color: #C7C8CD;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  height: auto;
+  background: #242526;
+  color: #C7C8CD;
+  position: relative;
+}
+header nav {
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav .logo-and-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+}
+header nav .logo-and-search .logo {
+  display: flex;
+  justify-content: start;
+  padding: 0.5em;
+}
+header nav .logo-and-search .logo h1 {
+  color: #3A5F6D;
+}
+header nav .logo-and-search .search-field input {
+  background: #3A3B3C;
+  border: none;
+  padding: 0.5em;
+}
+header nav .logo-and-search .search-field input::placeholder {
+  color: #C7C8CD;
+}
+header nav .header-icons {
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+header nav .header-icons i {
+  padding: 1em;
+  transition-duration: 0.3s;
+}
+header nav .header-icons i:hover {
+  color: #3A5F6D;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+header nav .user-related-icons {
+  display: flex;
+  justify-content: end;
+  width: 25%;
+  padding: 0.5em;
+}
+header nav .user-related-icons i {
+  transition-duration: 0.3s;
+  padding: 1em;
+  background: #3A3B3C;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+header nav .user-related-icons i:hover {
+  color: #3A5F6D;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+header nav .user-related-icons .user-image {
+  width: 3em;
+  height: 3em;
+}
+header nav .user-related-icons .user-image .profile-image {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+header nav .user-related-icons .user-image .icon {
+  transform: scale(0.5);
+  position: absolute;
+  top: 2em;
+  right: -0.5em;
+}
+header nav #user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #18191A;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: all 0.3s ease;
+  opacity: 1;
+  pointer-events: none;
+}
+header nav #user-menu .profile-image {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+main {
+  background: #18191A;
+  min-height: 100%;
+  min-width: 100%;
+}
+main .container-fluid h2 {
+  color: #3A5F6D;
+}
+main .storiesTop {
+  width: 70%;
+  height: auto;
+  font-size: 0.5em;
+}
+main .storiesTop .story {
+  background: #242526;
+  width: 15%;
+  position: relative;
+  margin: 0.5em;
+}
+main .storiesTop .story h4 {
+  color: #3A5F6D;
+  left: 0;
+  width: 100%;
+  padding: 0.2em;
+}
+main .storiesTop .story img {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+}
+main .postMessage {
+  background: #3A3B3C;
+}
+main .postMessage .profile-image {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+main .postMessage #postPopup {
+  display: none;
+  position: absolute;
+  background-color: #242526;
+  z-index: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 25em;
+  width: 50%;
+  margin: auto;
+}
+main .postMessage #postPopup textarea {
+  background: #3A3B3C;
+}
+main .postMessage .newPostToggler {
+  background: #242526;
+  border: none;
+}
+main .postMessage .newPostToggler::placeholder {
+  color: white;
+}
+
+/* ----------------------------------------- Media queries --------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
